@@ -8,6 +8,7 @@ Course::Course()
     code = "";
     credits = 0;
     totalGrade = 100;
+    categories = {"homework", "quiz", "midterm", "lab", "final"};
 }
 
 Course::~Course()
@@ -23,5 +24,8 @@ void Course::input(istream &ins)
         getline(ins, name);
         cout << "Enter class code: ";
         ins >> code;
+        cout << "Enter credits: ";
+        ins >> credits;
+
     }
 }

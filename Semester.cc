@@ -17,7 +17,7 @@ void Semester::input(istream &ins)
 {
     if (&ins == &cin)
     {
-        cout << "Enter season (Fall, Winter, Spring, Summer): ";
+        cout << "Enter season (f, w, sp, su): ";
         ins >> season;
         cout << "Enter year: ";
         ins >> year;
